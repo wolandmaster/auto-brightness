@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="2.3.1" package="com.github.wolandmaster.autobrightnessservice" version="1.0.0">
+    <profile name="wearable"/>
+    <service-application appid="com.github.wolandmaster.autobrightnessservice" exec="autobrightnessservice" multiple="false" nodisplay="true" type="capp">
+        <label>Auto Brightness</label>
+        <icon>autobrightnessservice.png</icon>
+    </service-application>
+    <privileges>
+        <privilege>http://tizen.org/privilege/display</privilege>
+    </privileges>
+</manifest>

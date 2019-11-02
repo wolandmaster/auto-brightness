@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="2.3.1" package="com.github.wolandmaster.autobrightnessui" version="1.0.0">
+    <profile name="wearable"/>
+    <ui-application appid="com.github.wolandmaster.autobrightnessui" exec="autobrightnessui" multiple="false" nodisplay="false" taskmanage="true" type="capp">
+        <label>Auto Brightness</label>
+        <icon>autobrightnessui.png</icon>
+    </ui-application>
+    <privileges>
+        <privilege>http://tizen.org/privilege/appmanager.launch</privilege>
+        <privilege>http://tizen.org/privilege/alarm.get</privilege>
+        <privilege>http://tizen.org/privilege/haptic</privilege>
+        <privilege>http://tizen.org/privilege/alarm.set</privilege>
+    </privileges>
+</manifest>
