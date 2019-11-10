@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Tizen
+Debug/
+SA_Report/
+.sign/
+crash-info/

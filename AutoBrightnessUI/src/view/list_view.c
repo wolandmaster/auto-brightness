@@ -36,6 +36,7 @@ list_view_context* list_view_create(Evas_Object *naviframe) {
 	context->list = elm_genlist_add(context->box);
 	evas_object_size_hint_weight_set(context->list, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_size_hint_align_set(context->list, EVAS_HINT_FILL, EVAS_HINT_FILL);
+	elm_genlist_mode_set(context->list, ELM_LIST_COMPRESS);
 	elm_scroller_policy_set(context->list, (Elm_Scroller_Policy) ELM_SCROLLER_POLICY_OFF,
 			(Elm_Scroller_Policy) ELM_SCROLLER_POLICY_AUTO);
 	data_iterate(on_data_iterate, context);
