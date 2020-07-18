@@ -11,7 +11,7 @@ static void on_win_delete_request(void *data, Evas_Object *obj, void *event_info
 }
 
 static void on_hw_key_back(void *data, Evas_Object *obj, void *event_info) {
-	app_context *context = (app_context*) data;
+	app_context *context = data;
 	if (elm_naviframe_top_item_get(context->naviframe) == elm_naviframe_bottom_item_get(context->naviframe)) {
 		elm_win_lower(context->window);
 	} else {
@@ -21,7 +21,7 @@ static void on_hw_key_back(void *data, Evas_Object *obj, void *event_info) {
 
 static void on_app_terminate(void *data) {
 	dlog_print(DLOG_DEBUG, LOG_TAG, "app terminate");
-	app_context *context = (app_context*) data;
+	app_context *context = data;
 	data_terminate();
 	free(context->list_context);
 	evas_object_del(context->window);
@@ -46,7 +46,6 @@ static void on_language_changed(app_event_info_h event_info, void *data) {
 	system_settings_get_value_string(SYSTEM_SETTINGS_KEY_LOCALE_LANGUAGE, &language);
 	elm_language_set(language);
 	free(language);
-	return;
 }
 
 static void create_base_gui(app_context *context) {
