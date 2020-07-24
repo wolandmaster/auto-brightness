@@ -40,7 +40,7 @@ Automatic brightness changer app for Samsung Gear Fit 2 (Pro)
     * Create a new distributor certificate -> Privilige: Partner
     * DUIDs: first one filled with your device (2.0#...), if not, connect your device: see above
 
-## Sign & Install
+### Sign & Install
   * Download the latest release tpk file of the app: https://github.com/wolandmaster/auto-brightness/releases
   * Sign with your certificate
     ```
